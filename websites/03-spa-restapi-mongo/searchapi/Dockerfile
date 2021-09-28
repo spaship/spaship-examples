@@ -12,7 +12,7 @@ CMD [ "node", "index.js" ]
 
 
 # prod stage
-FROM node:14-slim
+FROM node:16.9.1-slim
 
 WORKDIR /work/
 RUN chown 1001 /work \
