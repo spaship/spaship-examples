@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to prod branch
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: prod
           build_dir: build
@@ -31,7 +31,7 @@ jobs:
 
       - name: Deploy to prod-no-history branch
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: prod-no-history
           build_dir: build
