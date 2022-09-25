@@ -1,4 +1,4 @@
-FROM node:14 AS stage1
+FROM node:18 AS stage1
 
 WORKDIR /usr/src/app
 
@@ -12,7 +12,7 @@ CMD [ "node", "index.js" ]
 
 
 # prod stage
-FROM node:16.9.1-slim
+FROM node:18.9.0-slim
 
 WORKDIR /work/
 RUN chown 1001 /work \
